@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { buttonVariants } from '@/components/motionVariants/motionVariants';
-import Search from './svgs/Search';
+import React, { useState } from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { buttonVariants } from "@/components/motionVariants/motionVariants";
+import Search from "./svgs/Search";
 
 const BlogCard = ({
   title,
@@ -30,25 +30,26 @@ const BlogCard = ({
 );
 
 const BlogSection = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   const blogPosts = [
     {
-      title: 'Why Calisthenics',
-      href: '/blog/lovingcalisthenics',
-      emoji: '🏋️',
+      title: "Why Calisthenics",
+      href: "/blog/lovingcalisthenics",
+      emoji: "🏋️",
     },
     {
-      title: 'My Winning Condition: Web Development',
-      href: '/blog/lovingwebdevelopment',
-      emoji: '💻',
+      title: "My Winning Condition: Web Development",
+      href: "/blog/lovingwebdevelopment",
+      emoji: "💻",
     },
     {
-      title: 'How I Set Up Goals',
-      href: '/blog/settinggoals',
-      emoji: '🎯',
+      title: "How I Set Up Goals",
+      href: "/blog/settinggoals",
+      emoji: "🎯",
     },
-    { title: 'Distractions', href: '/blog/distractions', emoji: '🙉' },
+    { title: "Distractions", href: "/blog/distractions", emoji: "🙉" },
+    { title: "Primul Client", href: "/blog/firstclient", emoji: "🏆" },
   ];
 
   const filteredPosts = blogPosts.filter((post) =>
